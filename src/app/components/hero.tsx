@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Heart, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import heroImage from "@/app/assets/img/hero-image.jpg";
@@ -21,7 +22,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We're a volunteer-driven organization using AI and innovative
+              We&apos;re a volunteer-driven organization using AI and innovative
               software to create accessible learning tools, communication aids,
               and support systems for individuals with autism and their
               families.
@@ -40,10 +41,13 @@ export default function Hero() {
 
           <div className="relative animate-in fade-in slide-in-from-right duration-700 delay-300">
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl"></div>
-            <img
-              src={heroImage.src}
+            <Image
+              src={heroImage}
               alt="Volunteers helping children with autism using technology and educational apps"
               className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+              priority
+              width={800}
+              height={600}
             />
           </div>
         </div>
