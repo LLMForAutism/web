@@ -45,11 +45,13 @@ export default function Navbar() {
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full group-hover:left-0"></span>
               </Link>
             ))}
             <Button
               variant="hero"
               onClick={() => scrollToSection("#get-involved")}
+              className="cursor-pointer hover:shadow-md hover:scale-105 transition-all duration-200"
             >
               Jadi relawan
             </Button>
@@ -59,7 +61,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className="md:hidden p-2 text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded-md hover:scale-110"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -75,7 +77,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 font-medium py-3 px-3 rounded-md active:scale-95"
                 >
                   {item.label}
                 </Link>
@@ -83,7 +85,7 @@ export default function Navbar() {
               <Button
                 variant="hero"
                 onClick={() => scrollToSection("#get-involved")}
-                className="w-full"
+                className="w-full mt-2 hover:shadow-md active:scale-95 transition-all duration-200"
               >
                 Jadi relawan
               </Button>
