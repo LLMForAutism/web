@@ -9,8 +9,8 @@ export default function About() {
 			<Navbar />
 
 			<section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/30 py-20 md:py-32">
-				<div className="flex container mx-auto px-4 gap-20">
-					<div className="w-1/2 max-w-1/2">
+				<div className="flex container mx-auto px-4 gap-20 flex-col md:flex-row">
+					<div className="w-full order-2 md:order-1 md:w-1/2 md:max-w-1/2">
 						<p>LLMForAutism adalah organisasi nirlaba yang berfokus pada pengembangan solusi terapi berbasis teknologi Artificial Intelligence (AI), khususnya Large Language Model (LLM), untuk membantu anak-anak dengan spektrum autisme.
 Kami percaya bahwa teknologi dapat menjadi jembatan untuk menciptakan terapi yang lebih mudah diakses, terjangkau, dan efektif bagi anak-anak dan keluarga mereka di seluruh Indonesia.</p>
 
@@ -30,7 +30,7 @@ Kami percaya bahwa teknologi dapat menjadi jembatan untuk menciptakan terapi yan
 						</ul>
 					</div>
 
-					<div className="w-1/2 max-w-1/2">
+					<div className="w-full order-1 md:order-2 md:w-1/2 md:max-w-1/2 flex justify-center items-center">
 						<Image src={visitToMac} alt="Potret kunjungan ke MAC (Malang Autism Center)" className="relative rounded-3xl shadow-2xl w-full h-auto object-cover" />
 					</div>
 				</div>
