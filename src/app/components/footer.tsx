@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Menu</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary-dark transition-colors">Tentang kami</a></li>
+              <li><a href="/about" className="hover:text-primary-dark transition-colors">Tentang kami</a></li>
               <li><a href="#" className="hover:text-primary-dark transition-colors">Program kami</a></li>
               <li><a href="#" className="hover:text-primary-dark transition-colors">Relawan</a></li>
             </ul>
