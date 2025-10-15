@@ -75,10 +75,6 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
-                  }}
                   className="text-foreground hover:text-primary transition-colors font-medium py-2"
                 >
                   {item.label}
