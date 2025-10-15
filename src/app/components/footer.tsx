@@ -8,8 +8,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-xl font-bold mb-4">LLMForAutism</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              A volunteer organization dedicated to using technology and AI to create accessible, 
-              innovative solutions for the autism community.
+              Sebuah organisasi relawan yang berdedikasi untuk memanfaatkan teknologi dan kecerdasan buatan (AI) dalam menciptakan solusi inovatif dan mudah diakses bagi komunitas autisme.
             </p>
             <div className="flex gap-4">
               <a href="https://github.com/LLMForAutism" className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors" target="_blank">
@@ -22,17 +21,16 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Menu</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary-dark transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary-dark transition-colors">Our Programs</a></li>
-              <li><a href="#" className="hover:text-primary-dark transition-colors">Volunteer</a></li>
-              <li><a href="#" className="hover:text-primary-dark transition-colors">Resources</a></li>
+              <li><a href="#" className="hover:text-primary-dark transition-colors">Tentang kami</a></li>
+              <li><a href="#" className="hover:text-primary-dark transition-colors">Program kami</a></li>
+              <li><a href="#" className="hover:text-primary-dark transition-colors">Relawan</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4">Kontak</h4>
             <div className="space-y-3 text-muted-foreground">
               <a href="mailto:hello@autismtech.org" className="flex items-center gap-2 hover:text-primary-dark transition-colors">
                 <Mail className="w-4 h-4" />
@@ -43,7 +41,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} LLMForAutism. Built with ❤️ by volunteers.</p>
+          <p>&copy; {new Date().getFullYear()} LLMForAutism. Proyek penuh kasih dari para relawan.</p>
         </div>
       </div>
     </footer>

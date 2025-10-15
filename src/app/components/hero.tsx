@@ -12,29 +12,26 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/30 rounded-full">
               <Heart className="w-4 h-4 text-accent" />
               <span className="text-sm font-medium">
-                Empowering Through Technology
+                Memberdayakan Melalui Teknologi
               </span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Building a Better Future for{" "}
-              <span className="text-primary-dark">Autism Support</span>
+              Membangun Masa Depan yang Lebih Baik untuk{" "}
+              <span className="text-primary-dark">Dukungan Autisme</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We&apos;re a volunteer-driven organization using AI and innovative
-              software to create accessible learning tools, communication aids,
-              and support systems for individuals with autism and their
-              families.
+              Kami adalah organisasi berbasis relawan yang menggunakan AI dan perangkat lunak inovatif untuk menciptakan alat pembelajaran yang mudah diakses, alat komunikasi, dan sistem dukungan bagi individu dengan autisme dan keluarga mereka.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Get Involved
+              <Button variant="hero" size="lg" className="group cursor-pointer">
+                Bergabung
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="hero-outline" size="lg">
-                Learn More
+              <Button variant="hero-outline" size="lg" className="cursor-pointer">
+                Pelajari lebih lanjut
               </Button>
             </div>
           </div>
