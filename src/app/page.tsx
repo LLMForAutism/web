@@ -8,7 +8,7 @@ import VisiMisi from "./components/visi_misi";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-whitesmoke">
       <Navbar />
       <Hero />
       <VisiMisi />
