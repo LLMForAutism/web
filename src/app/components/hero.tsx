@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-br from-mint-green/30 via-background to-mint-green/20 py-20 md:py-32 mt-20"
+      className="relative overflow-hidden bg-whitesmoke py-20 md:py-32 mt-20"
     >
       <div className="container mx-auto px-4">
         {/* Title */}
