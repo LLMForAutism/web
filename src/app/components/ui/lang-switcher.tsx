@@ -10,11 +10,11 @@ export default function LangSwitcher() {
   };
 
   return (
-    <div className="flex gap-3 justify-center items-center">
+    <div className="flex gap-3 justify-center items-center hover:scale-105 transition-transform duration-200">
       <button
         className={`h-10 w-10 rounded-full cursor-pointer font-semibold transition-opacity duration-200 ${
           currentLang === "id"
-            ? "bg-mint-green text-white opacity-100"
+            ? "bg-jade-green text-white opacity-100"
             : "opacity-50 hover:opacity-100"
         }`}
         onClick={() => changeWebLang("id")}
@@ -25,7 +25,7 @@ export default function LangSwitcher() {
       <button
         className={`h-10 w-10 rounded-full cursor-pointer font-semibold transition-opacity duration-200 ${
           currentLang === "en"
-            ? "bg-mint-green text-white opacity-100"
+            ? "bg-jade-green text-white opacity-100"
             : "opacity-50 hover:opacity-100"
         }`}
         onClick={() => changeWebLang("en")}

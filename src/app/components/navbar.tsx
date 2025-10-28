@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -10,12 +10,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Beranda", href: "/" },
-    { label: "Misi", href: "#mission" },
-    { label: "Program", href: "#programs" },
-    { label: "Dampak", href: "#impact" },
-    { label: "Galeri", href: "/gallery" },
-    { label: "Tentang Kami", href: "/about" }
+    { label: "Home", href: "/" },
+    { label: "Portfolio", href: "#portfolio" },
+    { label: "Blog", href: "#blog" },
+    { label: "Tentang Kami", href: "/about" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -25,35 +23,45 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
             href="/#hero"
-            className="text-xl font-bold text-primary hover:text-primary/80 transition-colors"
+            className="text-2xl font-bold transition-transform duration-200"
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            LLM For Autism
+            <span className="text-foreground">LLMFor</span>
+            <span className="text-jade-green">Autism</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            {navItems.map((item) => (
+          <div className="hidden md:flex items-center gap-8">
+            {navItems.map((item, index) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className={`relative text-base font-medium transition-colors duration-200 py-2 ${
+                  index === 0
+                    ? "text-jade-green after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-jade-green"
+                    : "text-muted-foreground hover:text-jade-green"
+                }`}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 {item.label}
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full group-hover:left-0"></span>
               </Link>
             ))}
+          </div>
+
+          <div className="hidden md:flex gap-8">
             <Button
-              variant="hero"
+              variant="default"
               onClick={() => scrollToSection("#get-involved")}
-              className="cursor-pointer hover:shadow-md hover:scale-105 transition-all duration-200"
+              className="hidden md:flex bg-jade-green hover:bg-primary-dark text-white font-semibold px-6 py-2 rounded-lg hover:shadow-md hover:scale-105 transition-all duration-200 cursor-pointer"
+              style={{ fontFamily: "Poppins, sans-serif" }}
             >
-              Jadi relawan
+              Hubungi Kami
             </Button>
 
             <LangSwitcher />
@@ -61,7 +69,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded-md hover:scale-110"
+            className="md:hidden p-2 text-foreground hover:text-jade-green hover:bg-primary/10 transition-all duration-200 rounded-md"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -71,26 +79,36 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col gap-4">
-              {navItems.map((item) => (
+          <div className="md:hidden py-4 border-t border-border animate-in slide-in-from-top duration-200">
+            <div className="flex flex-col gap-2">
+              {navItems.map((item, index) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 font-medium py-3 px-3 rounded-md active:scale-95"
+                  className={`text-base font-medium transition-all duration-200 py-3 px-4 rounded-md ${
+                    index === 0
+                      ? "text-jade-green bg-primary/10"
+                      : "text-muted-foreground hover:text-jade-green hover:bg-primary/10"
+                  }`}
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
+
               <Button
-                variant="hero"
+                variant="default"
                 onClick={() => scrollToSection("#get-involved")}
-                className="w-full mt-2 hover:shadow-md active:scale-95 transition-all duration-200"
+                className="w-full mt-2 bg-jade-green hover:bg-primary-dark text-white font-semibold rounded-lg hover:shadow-md active:scale-95 transition-all duration-200 cursor-pointer"
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
-                Jadi relawan
+                Hubungi Kami
               </Button>
 
-              <LangSwitcher />
+              <div className="mt-2">
+                <LangSwitcher />
+              </div>
             </div>
           </div>
         )}
