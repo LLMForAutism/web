@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import OurJourney from "./components/our-jouney";
 import ProjectShowcase from "./components/project-showcase";
 import VisiMisi from "./components/visi_misi";
+import Gallery from "./gallery/page";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Collaboration />
       <OurJourney />
       <ProjectShowcase />
+      <Gallery />
       <Footer />
     </div>
   );
