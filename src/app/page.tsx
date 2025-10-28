@@ -3,6 +3,7 @@ import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import OurJourney from "./components/our-jouney";
+import ProjectShowcase from "./components/project-showcase";
 import VisiMisi from "./components/visi_misi";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <VisiMisi />
       <Collaboration />
       <OurJourney />
+      <ProjectShowcase />
       <Footer />
     </div>
   );
