@@ -108,7 +108,6 @@ export default function Hero() {
                 <br />
                 bukan sekadar pintar.
               </p>
-
             </div>
 
             <div className="absolute -right-8">
@@ -165,7 +164,8 @@ export default function Hero() {
                     className="text-xs text-muted-foreground mt-2"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
-                    Rata-rata durasi dari "mulai regulasi" ~ "tenang",
+                    Rata-rata durasi dari &quot;mulai regulasi&quot; ~
+                    &quot;tenang&quot;,
                     <br />
                     dengan bubble kecil per hari (5-6)
                   </p>
