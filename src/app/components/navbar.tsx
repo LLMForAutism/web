@@ -13,7 +13,7 @@ export default function Navbar() {
     { label: "Home", href: "/" },
     { label: "Portfolio", href: "#portfolio" },
     { label: "Blog", href: "#blog" },
-    { label: "Tentang Kami", href: "#about" },
+    { label: "Tentang Kami", href: "/about" },
   ];
 
   const scrollToSection = (href: string) => {
