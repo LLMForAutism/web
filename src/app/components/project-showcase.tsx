@@ -4,21 +4,12 @@ export default function ProjectShowcase() {
   const projects = [
     {
       id: 1,
-      title: "Projek lomba bisnis",
-      subtitle: "Projek lomba bisnis",
-      description: "Lorem ipsum dolor sit amet consectetur. Sed nunc porttitor ullamcorper ullamcorper. Feugiat volutpat dis lectus placerat in amet enim dignissim. Molestie malesuada vel ac mauris euismod consequat nisl. Ma...",
-      date: "20 Mei 2025",
-      imageUrl: "/images/project-image.jpg",
+      title: "Aplikasi Mobile Prototipe - Ceriaku",
+      subtitle: "Inovasi Terapi Autisme Berbasis AI",
+      description: "Ceriaku adalah prototipe aplikasi terapi digital yang kami rancang untuk membawa kebahagiaan bagi anak autisme. Aplikasi ini mengintegrasikan kekuatan AI (LLM) yang ramah anak dengan metode terapi teruji (seperti ABC, FCT, dan Roleplay) serta gamifikasi yang menarik. Ini adalah langkah awal kami mewujudkan terapi yang ceria dan mudah diakses.",
+      date: "Feb-Okt 2025",
+      imageUrl: "/images/projects/ceriaku-prototype-project.webp",
       imagePosition: "left" as const,
-    },
-    {
-      id: 2,
-      title: "Projek lomba bisnis",
-      subtitle: "Projek lomba bisnis",
-      description: "Lorem ipsum dolor sit amet consectetur. Sed nunc porttitor ullamcorper ullamcorper. Feugiat volutpat dis lectus placerat in amet enim dignissim. Molestie malesuada vel ac mauris euismod consequat nisl. M...",
-      date: "20 Mei 2025",
-      imageUrl: "/images/project-image.jpg",
-      imagePosition: "right" as const,
     },
   ];
 
