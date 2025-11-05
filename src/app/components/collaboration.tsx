@@ -11,7 +11,7 @@ export default function Collaboration() {
 
 				<div className="flex gap-8 justify-center">
 					<BrandSmallCard logoUrl="/logo/logo-mac.webp" brandName="Malang Autism Center" />
-					<BrandSmallCard logoUrl="/logo/logo-hey-kai.webp" brandName="HeyKai" />
+					<BrandSmallCard logoUrl="/logo/logo-letsconnect-canada.webp" brandName="Let'sConnect Canada" />
 				</div>
 			</div>
 		</section>
