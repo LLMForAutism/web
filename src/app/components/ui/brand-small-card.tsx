@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function BrandSmallCard({
   logoUrl,
   brandName,
-  logoWidth = 48,
-  logoHeight = 48,
+  logoWidth = 80,
+  logoHeight = 80,
   className = "",
 }: {
   logoUrl: string,
@@ -26,7 +26,7 @@ export default function BrandSmallCard({
           className="object-contain"
         />
       </div>
-      <p className="font-bold text-base md:text-lg text-foreground whitespace-nowrap">
+      <p className="font-bold text-base md:text-2xl text-foreground whitespace-nowrap">
         {brandName}
       </p>
     </div>
