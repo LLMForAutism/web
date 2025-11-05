@@ -12,83 +12,24 @@ export default function AboutUs() {
   const teamMembers = [
     {
       id: 1,
-      name: "Ekya Muhammad Hasfi F",
-      role: "Frontend Developer, Mobile developer",
-      imageUrl: "/images/team/ekya.webp",
-      link: "https://linkedin.com/in/ekya",
-      rating: 5
+      name: "Gabriel Batavia Xaverius",
+      role: "Founder, Team Leader",
+      imageUrl: "/images/team/gabriel.webp",
+      link: "https://www.linkedin.com/in/gabriel-batavia-xaverius/",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      role: "UI/UX Designer",
-      imageUrl: "/images/team/jane.webp",
-      link: "https://linkedin.com/in/jane",
-      rating: 5
+      name: "Ekya Muhammad Hasfi F",
+      role: "Mobile developer",
+      imageUrl: "/images/team/ekya.webp",
+      link: "https://www.linkedin.com/in/ekya-muhammad-701729288/",
     },
     {
       id: 3,
-      name: "Bob Johnson",
+      name: "Farrel Augusta Dinata",
       role: "Backend Engineer",
-      imageUrl: "/images/team/bob.webp",
-      link: "https://linkedin.com/in/bob",
-      rating: 5
-    },
-    {
-      id: 4,
-      name: "Alice Chen",
-      role: "Data Scientist",
-      imageUrl: "/images/team/alice.webp",
-      link: "https://linkedin.com/in/alice",
-      rating: 5
-    },
-    {
-      id: 5,
-      name: "Michael Rodriguez",
-      role: "DevOps Engineer",
-      imageUrl: "/images/team/michael.webp",
-      link: "https://linkedin.com/in/michael",
-      rating: 5
-    },
-    {
-      id: 6,
-      name: "Sarah Williams",
-      role: "Product Manager",
-      imageUrl: "/images/team/sarah.webp",
-      link: "https://linkedin.com/in/sarah",
-      rating: 5
-    },
-    {
-      id: 7,
-      name: "David Kim",
-      role: "Machine Learning Engineer",
-      imageUrl: "/images/team/david.webp",
-      link: "https://linkedin.com/in/david",
-      rating: 5
-    },
-    {
-      id: 8,
-      name: "Emma Thompson",
-      role: "Quality Assurance Lead",
-      imageUrl: "/images/team/emma.webp",
-      link: "https://linkedin.com/in/emma",
-      rating: 5
-    },
-    {
-      id: 9,
-      name: "James Lee",
-      role: "Security Specialist",
-      imageUrl: "/images/team/james.webp",
-      link: "https://linkedin.com/in/james",
-      rating: 5
-    },
-    {
-      id: 10,
-      name: "Olivia Martinez",
-      role: "Content Strategist",
-      imageUrl: "/images/team/olivia.webp",
-      link: "https://linkedin.com/in/olivia",
-      rating: 5
+      imageUrl: "/images/team/farrel.webp",
+      link: "https://www.linkedin.com/in/farrelad/",
     },
   ];
 
