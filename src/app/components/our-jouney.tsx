@@ -107,7 +107,7 @@ export default function OurJourney() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-whitesmoke py-20 md:py-32">
+    <section id="our-journey" className="relative overflow-hidden bg-whitesmoke py-20 md:py-32">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-16">

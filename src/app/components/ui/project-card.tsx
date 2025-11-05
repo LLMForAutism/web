@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Calendar } from "lucide-react";
 
 export default function ProjectCard({
+  idHtml,
   title,
   subtitle,
   description,
@@ -10,6 +11,7 @@ export default function ProjectCard({
   imagePosition = "left",
   className = "",
 }: {
+  idHtml: string;
   title: string;
   subtitle: string;
   description: string;
@@ -22,6 +24,7 @@ export default function ProjectCard({
 
   return (
     <div
+      id={idHtml}
       className={`flex flex-col ${
         isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
       } gap-8 items-center ${className}`}

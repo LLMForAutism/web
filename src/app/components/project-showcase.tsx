@@ -4,6 +4,7 @@ export default function ProjectShowcase() {
   const projects = [
     {
       id: 1,
+      idHtml: "project-ceriaku",
       title: "Aplikasi Mobile Prototipe - Ceriaku",
       subtitle: "Inovasi Terapi Autisme Berbasis AI",
       description: "Ceriaku adalah prototipe aplikasi terapi digital yang kami rancang untuk membawa kebahagiaan bagi anak autisme. Aplikasi ini mengintegrasikan kekuatan AI (LLM) yang ramah anak dengan metode terapi teruji (seperti ABC, FCT, dan Roleplay) serta gamifikasi yang menarik. Ini adalah langkah awal kami mewujudkan terapi yang ceria dan mudah diakses.",
@@ -38,6 +39,7 @@ export default function ProjectShowcase() {
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
+              idHtml={project.idHtml}
               title={project.title}
               subtitle={project.subtitle}
               description={project.description}
