@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Heart } from "lucide-react";
 import { Button } from "./ui/button";
-import ingtonIcon from "@/app/assets/img/ington-icon.png";
-import arrowCurvedRight from "@/app/assets/img/curved-right-arrow.webp";
-import arrowCurvedLeft from "@/app/assets/img/curved-left-arrow.webp";
-import PhoneMockup from "./ui/phone-mockup";
+import ingtonIcon from "@assets/img/ington-icon.png";
+import arrowCurvedRight from "@assets/img/curved-right-arrow.webp";
+import arrowCurvedLeft from "@assets/img/curved-left-arrow.webp";
+import PhoneMockup from "@components/ui/phone-mockup";
 
 export default function Hero() {
   return (

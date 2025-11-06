@@ -12,7 +12,7 @@ import {
   Target,
 } from "lucide-react";
 import RoadPath from "./ui/road-path";
-import checkpointIcon from "@/app/assets/img/checkpoint-icon.webp";
+import checkpointIcon from "@assets/img/checkpoint-icon.webp";
 
 interface JourneyItem {
   id: number;
