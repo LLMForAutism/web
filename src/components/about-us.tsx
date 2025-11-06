@@ -3,35 +3,13 @@
 import { useState, useRef } from "react";
 import PersonCard from "./ui/person-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { members } from "repositories/members";
 
 export default function AboutUs() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Gabriel Batavia Xaverius",
-      role: "Founder, Team Leader",
-      imageUrl: "/images/team/gabriel.webp",
-      link: "https://www.linkedin.com/in/gabriel-batavia-xaverius/",
-    },
-    {
-      id: 2,
-      name: "Ekya Muhammad Hasfi F",
-      role: "Mobile developer",
-      imageUrl: "/images/team/ekya.webp",
-      link: "https://www.linkedin.com/in/ekya-muhammad-701729288/",
-    },
-    {
-      id: 3,
-      name: "Farrel Augusta Dinata",
-      role: "Backend Engineer",
-      imageUrl: "/images/team/farrel.webp",
-      link: "https://www.linkedin.com/in/farrelad/",
-    },
-  ];
 
   const checkScrollButtons = () => {
     if (scrollContainerRef.current) {
@@ -117,7 +95,7 @@ export default function AboutUs() {
               msOverflowStyle: "none",
             }}
           >
-            {teamMembers.map((member) => (
+            {members.map((member) => (
               <div
                 key={member.id}
                 className="flex-shrink-0 w-[280px] sm:w-[320px] snap-start"
