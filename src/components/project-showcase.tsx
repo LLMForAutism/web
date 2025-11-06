@@ -1,4 +1,4 @@
-import { projects } from "repositories/projects";
+import { projects } from "@repositories/projects";
 import ProjectCard from "./ui/project-card";
 
 export default function ProjectShowcase() {

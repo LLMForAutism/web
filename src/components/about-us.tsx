@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import PersonCard from "./ui/person-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { members } from "repositories/members";
+import { members } from "@repositories/members";
 
 export default function AboutUs() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
