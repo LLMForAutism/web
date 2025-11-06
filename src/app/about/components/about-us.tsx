@@ -1,5 +1,5 @@
 import Image from "next/image";
-import visitToMac from "@app/assets/img/kunjungan-ke-mac.jpg";
+import visitToMac from "@assets/img/kunjungan-ke-mac.jpg";
 
 export default function AboutUs() {
     return (
