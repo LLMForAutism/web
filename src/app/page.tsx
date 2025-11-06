@@ -5,7 +5,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import OurJourney from "../components/our-jouney";
 import ProjectShowcase from "../components/project-showcase";
-import VisiMisi from "../components/visi_misi";
+import VisiMisi from "../components/visi-misi";
 import Gallery from "../components/gallery";
 
 export default function Home() {
