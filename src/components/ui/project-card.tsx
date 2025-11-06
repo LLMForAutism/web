@@ -1,30 +1,19 @@
 import Image from "next/image";
 import { Calendar } from "lucide-react";
+import { Project } from "repositories/projects";
 
 export default function ProjectCard({
-  idHtml,
-  title,
-  subtitle,
-  description,
-  date,
-  imageUrl,
-  imagePosition = "left",
+  project,
   className = "",
 }: {
-  idHtml: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  date: string;
-  imageUrl: string;
-  imagePosition?: "left" | "right";
+  project: Project
   className?: string;
 }) {
-  const isImageLeft = imagePosition === "left";
+  const isImageLeft = project.imagePosition === "left";
 
   return (
     <div
-      id={idHtml}
+      id={project.idHtml}
       className={`flex flex-col ${
         isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
       } gap-8 items-center ${className}`}
@@ -34,8 +23,8 @@ export default function ProjectCard({
       <div className="w-full lg:w-1/2">
         <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-3xl overflow-hidden bg-gray-200">
           <Image
-            src={imageUrl}
-            alt={title}
+            src={project.imageUrl}
+            alt={project.title}
             fill
             className="object-cover"
           />
@@ -48,26 +37,22 @@ export default function ProjectCard({
         <div className="flex justify-end">
           <div className="inline-flex items-center gap-2 bg-jade-green text-white px-4 py-2 rounded-lg shadow-md">
             <Calendar className="w-4 h-4" />
-            <span className="font-semibold text-sm">{date}</span>
+            <span className="font-semibold text-sm">{project.date}</span>
           </div>
         </div>
 
-        {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-          {title}
+          {project.title}
         </h2>
 
-        {/* Subtitle */}
         <h3 className="text-xl md:text-2xl font-medium text-muted-foreground">
-          {subtitle}
+          {project.subtitle}
         </h3>
 
-        {/* Description */}
         <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-          {description}
+          {project.description}
         </p>
 
-        {/* Read More Link */}
         <a
           href="#"
           className="inline-block text-jade-green font-semibold hover:underline text-base md:text-lg"

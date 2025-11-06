@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Calendar, Users, Code, ImageIcon } from "lucide-react";
-import Navbar from "../components/navbar";
+import Navbar from "../../components/navbar";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
