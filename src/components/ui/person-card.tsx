@@ -1,30 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import { Member } from "@repositories/members";
+import { useState } from "react";
 
 export default function PersonCard({
-  name,
-  role,
-  imageUrl,
-  link,
+  member,
   className = "",
 }: {
-  name: string;
-  role: string;
-  imageUrl: string;
-  link?: string;
+  member: Member;
   className?: string;
 }) {
+  const [imageSrc, setImageSrc] = useState(member.imageUrl);
+
   const CardContent = () => (
     <div className="relative w-full h-full group cursor-pointer">
       {/* Image */}
       <div className="relative w-full h-full rounded-3xl overflow-hidden bg-gradient-to-b from-transparent via-transparent to-black/60">
         <Image
-          src={imageUrl}
-          alt={name}
+          src={imageSrc}
+          alt={member.name}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
+          onError={() => setImageSrc("/images/default-avatar.svg")}
         />
-        
+
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
       </div>
@@ -36,26 +37,26 @@ export default function PersonCard({
 
       {/* Text Content */}
       <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-        <h3 
+        <h3
           className="text-xl md:text-2xl font-bold mb-1"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          {name}
+          {member.name}
         </h3>
-        <p 
+        <p
           className="text-sm md:text-base text-white/90"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          {role}
+          {member.role}
         </p>
       </div>
     </div>
   );
 
-  if (link) {
+  if (member.link) {
     return (
       <a
-        href={link}
+        href={member.link}
         target="_blank"
         rel="noopener noreferrer"
         className={`block w-full aspect-[3/4] ${className}`}
