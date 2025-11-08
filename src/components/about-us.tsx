@@ -10,10 +10,10 @@ export default function AboutUs() {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-
   const checkScrollButtons = () => {
     if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      const { scrollLeft, scrollWidth, clientWidth } =
+        scrollContainerRef.current;
       setCanScrollLeft(scrollLeft > 0);
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
     }
@@ -22,15 +22,16 @@ export default function AboutUs() {
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
       const scrollAmount = scrollContainerRef.current.clientWidth * 0.8;
-      const newScrollLeft = direction === "left" 
-        ? scrollContainerRef.current.scrollLeft - scrollAmount
-        : scrollContainerRef.current.scrollLeft + scrollAmount;
-      
+      const newScrollLeft =
+        direction === "left"
+          ? scrollContainerRef.current.scrollLeft - scrollAmount
+          : scrollContainerRef.current.scrollLeft + scrollAmount;
+
       scrollContainerRef.current.scrollTo({
         left: newScrollLeft,
-        behavior: "smooth"
+        behavior: "smooth",
       });
-      
+
       setTimeout(checkScrollButtons, 300);
     }
   };
@@ -41,17 +42,18 @@ export default function AboutUs() {
         {/* Header */}
         <div className="flex justify-between items-start mb-12 max-w-7xl mx-auto">
           <div>
-            <h2 
+            <h2
               className="text-4xl md:text-5xl font-bold mb-4"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               Tentang <span className="text-jade-green">Kami</span>
             </h2>
-            <p 
+            <p
               className="text-muted-foreground text-base md:text-lg"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
-              Kami menciptakan teknologi AI yang peduli dan bermanfaat bagi manusia.
+              Kami menciptakan teknologi AI yang peduli dan bermanfaat bagi
+              manusia.
             </p>
           </div>
 
@@ -95,17 +97,12 @@ export default function AboutUs() {
               msOverflowStyle: "none",
             }}
           >
-            {members.map((member) => (
+            {members.map((member, index) => (
               <div
-                key={member.id}
+                key={index}
                 className="flex-shrink-0 w-[280px] sm:w-[320px] snap-start"
               >
-                <PersonCard
-                  name={member.name}
-                  role={member.role}
-                  imageUrl={member.imageUrl}
-                  link={member.link}
-                />
+                <PersonCard member={member} />
               </div>
             ))}
           </div>

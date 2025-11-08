@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#e5e7eb" stop-opacity="1" />
+            <stop offset="100%" stop-color="#9ca3af" stop-opacity="1" />
+        </linearGradient>
+    </defs>
+    <rect width="400" height="400" fill="url(#grad)" />
+    <circle cx="200" cy="160" r="60" fill="#d1d5db" />
+    <ellipse cx="200" cy="320" rx="100" ry="80" fill="#d1d5db" />
+</svg>
