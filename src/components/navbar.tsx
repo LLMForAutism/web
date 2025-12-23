@@ -5,13 +5,14 @@ import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import LangSwitcher from "./ui/lang-switcher";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Portfolio", href: "#portfolio" },
+    { label: "Proyek", href: "#proyek" },
     { label: "Blog", href: "#blog" },
     { label: "Tentang Kami", href: "/about" },
   ];
@@ -21,6 +22,8 @@ export default function Navbar() {
     const element = document.querySelector(href);
     element?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -42,11 +45,10 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`relative text-base font-medium transition-colors duration-200 py-2 ${
-                  index === 0
+                className={`relative text-base font-medium transition-colors duration-200 py-2 ${pathname === item.href
                     ? "text-jade-green after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-jade-green"
                     : "text-muted-foreground hover:text-jade-green"
-                }`}
+                  }`}
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 {item.label}
@@ -81,15 +83,14 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-in slide-in-from-top duration-200">
             <div className="flex flex-col gap-2">
-              {navItems.map((item, index) => (
+              {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`text-base font-medium transition-all duration-200 py-3 px-4 rounded-md ${
-                    index === 0
+                  className={`text-base font-medium transition-all duration-200 py-3 px-4 rounded-md ${pathname === item.href
                       ? "text-jade-green bg-primary/10"
                       : "text-muted-foreground hover:text-jade-green hover:bg-primary/10"
-                  }`}
+                    }`}
                   style={{ fontFamily: "Poppins, sans-serif" }}
                   onClick={() => setIsOpen(false)}
                 >
