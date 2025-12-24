@@ -166,6 +166,6 @@ const components: MDXComponents = {
 	),
 };
 
-export function useMDXComponents(): MDXComponents {
+export function getMDXComponents(): MDXComponents {
 	return components;
 }

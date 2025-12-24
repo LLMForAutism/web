@@ -1,8 +1,7 @@
 import { getAllBlogSlugs, getBlogBySlug } from "@/lib/blogs";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
-// import { useMDXComponents } from "../../../../mdx-components";
-import { useMDXComponents } from "@root/mdx-components";
+import { getMDXComponents } from "@root/mdx-components";
 
 export async function generateStaticParams() {
 	const slugs = getAllBlogSlugs();
@@ -27,7 +26,7 @@ export default async function BlogPost({
 	const { content } = await compileMDX({
 		source: post.content,
 		options: { parseFrontmatter: true },
-		components: useMDXComponents(),
+		components: getMDXComponents(),
 	});
 
 	return <>{content}</>;

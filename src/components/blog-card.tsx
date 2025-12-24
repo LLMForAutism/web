@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Calendar, Clock, User } from "lucide-react";
+import Image from "next/image";
 
 export default function BlogCard({
 	slug,
@@ -26,7 +27,7 @@ export default function BlogCard({
 				{/* Image Placeholder */}
 				<div className="relative h-48 bg-gradient-to-br from-mint-green to-jade-green overflow-hidden">
 					{image ? (
-						<img
+						<Image
 							src={image}
 							alt={title}
 							className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
