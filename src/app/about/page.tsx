@@ -4,7 +4,7 @@ import AboutUs from "./components/about-us";
 import OurRoadmap from "./components/our-journey";
 
 export default function About() {
-  return (
+	return (
 		<div>
 			<Navbar />
 			<AboutUs />
