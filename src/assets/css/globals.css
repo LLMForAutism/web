@@ -1,62 +1,61 @@
 @import "tailwindcss";
 
-
 @theme {
-  --color-background: #FFFFFF;
-  --color-foreground: #293D31;
+	--color-background: #ffffff;
+	--color-foreground: #293d31;
 
-  --color-card: #FFFFFF;
-  --color-card-foreground: #293D31;
+	--color-card: #ffffff;
+	--color-card-foreground: #293d31;
 
-  --color-primary: #B1DABC;
-  --color-primary-foreground: #293D31;
-  --color-primary-dark: #44AD72;
+	--color-primary: #b1dabc;
+	--color-primary-foreground: #293d31;
+	--color-primary-dark: #44ad72;
 
-  --color-mint-green: #CEF1DC;
-  --color-jade-green: #44AD72;
+	--color-mint-green: #cef1dc;
+	--color-jade-green: #44ad72;
 
-  --color-whitesmoke: #F5F6F8;
+	--color-whitesmoke: #f5f6f8;
 
-  /* Base */
-  --color-popover: #FFFFFF;
-  --color-popover-foreground: #293D31;
-  
-  /* Primary */
-  --color-primary: #B1DABC;
-  --color-primary-foreground: #293D31;
-  --color-primary-dark: #44AD72;
-  
-  /* Secondary */
-  --color-secondary: #F3F8F5;
-  --color-secondary-foreground: #293D31;
-  
-  /* Muted */
-  --color-muted: #F6F8F7;
-  --color-muted-foreground: #607A6A;
-  
-  /* Accent */
-  --color-accent: #F2953A;
-  --color-accent-foreground: #FFFFFF;
-  
-  /* Destructive */
-  --color-destructive: #E33C3C;
-  --color-destructive-foreground: #FFFFFF;
-  
-  /* Borders & Inputs */
-  --color-border: #E3EBE6;
-  --color-input: #E3EBE6;
-  --color-ring: #B1DABC;
-  
-  /* Radius */
-  --radius: 0.75rem;
-  
-  /* Sidebar */
-  --color-sidebar-background: #FAFAFA;
-  --color-sidebar-foreground: #3F4045;
-  --color-sidebar-primary: #1A1A1A;
-  --color-sidebar-primary-foreground: #FAFAFA;
-  --color-sidebar-accent: #F4F4F4;
-  --color-sidebar-accent-foreground: #1A1A1A;
-  --color-sidebar-border: #E6E8EB;
-  --color-sidebar-ring: #337BFF;
+	/* Base */
+	--color-popover: #ffffff;
+	--color-popover-foreground: #293d31;
+
+	/* Primary */
+	--color-primary: #b1dabc;
+	--color-primary-foreground: #293d31;
+	--color-primary-dark: #44ad72;
+
+	/* Secondary */
+	--color-secondary: #f3f8f5;
+	--color-secondary-foreground: #293d31;
+
+	/* Muted */
+	--color-muted: #f6f8f7;
+	--color-muted-foreground: #607a6a;
+
+	/* Accent */
+	--color-accent: #f2953a;
+	--color-accent-foreground: #ffffff;
+
+	/* Destructive */
+	--color-destructive: #e33c3c;
+	--color-destructive-foreground: #ffffff;
+
+	/* Borders & Inputs */
+	--color-border: #e3ebe6;
+	--color-input: #e3ebe6;
+	--color-ring: #b1dabc;
+
+	/* Radius */
+	--radius: 0.75rem;
+
+	/* Sidebar */
+	--color-sidebar-background: #fafafa;
+	--color-sidebar-foreground: #3f4045;
+	--color-sidebar-primary: #1a1a1a;
+	--color-sidebar-primary-foreground: #fafafa;
+	--color-sidebar-accent: #f4f4f4;
+	--color-sidebar-accent-foreground: #1a1a1a;
+	--color-sidebar-border: #e6e8eb;
+	--color-sidebar-ring: #337bff;
 }

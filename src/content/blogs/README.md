@@ -42,6 +42,7 @@ Write your blog post content using Markdown/MDX syntax. You can use:
 ## 4. That's It!
 
 The blog post will automatically:
+
 - ✅ Appear in the blog listing page (`/blogs`)
 - ✅ Be accessible at `/blogs/your-slug`
 - ✅ Use the proper layout with navbar, hero, content card, and CTA
@@ -76,14 +77,14 @@ Every milestone, no matter how small, is worth celebrating...
 
 ## Frontmatter Fields
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `title` | Yes | The title of your blog post |
-| `excerpt` | Yes | Brief description (shown in cards) |
-| `date` | Yes | Publication date (YYYY-MM-DD) |
-| `author` | No | Author name (defaults to "Tim LLMForAutism") |
-| `readTime` | No | Estimated read time (defaults to "5 menit") |
-| `category` | No | Category tag (defaults to "Artikel") |
+| Field      | Required | Description                                  |
+| ---------- | -------- | -------------------------------------------- |
+| `title`    | Yes      | The title of your blog post                  |
+| `excerpt`  | Yes      | Brief description (shown in cards)           |
+| `date`     | Yes      | Publication date (YYYY-MM-DD)                |
+| `author`   | No       | Author name (defaults to "Tim LLMForAutism") |
+| `readTime` | No       | Estimated read time (defaults to "5 menit")  |
+| `category` | No       | Category tag (defaults to "Artikel")         |
 
 ## No Need to:
 

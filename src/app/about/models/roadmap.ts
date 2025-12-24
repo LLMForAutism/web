@@ -1,4 +1,4 @@
 export default interface Roadmap {
-    date: Date;
-    activity: string;
+	date: Date;
+	activity: string;
 }

@@ -9,17 +9,17 @@ import VisiMisi from "../components/visi-misi";
 import Gallery from "../components/gallery";
 
 export default function Home() {
-  return (
-    <div className="bg-whitesmoke">
-      <Navbar />
-      <Hero />
-      <VisiMisi />
-      <Collaboration />
-      <OurJourney />
-      <ProjectShowcase />
-      <Gallery />
-      <AboutUs />
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="bg-whitesmoke">
+			<Navbar />
+			<Hero />
+			<VisiMisi />
+			<Collaboration />
+			<OurJourney />
+			<ProjectShowcase />
+			<Gallery />
+			<AboutUs />
+			<Footer />
+		</div>
+	);
 }

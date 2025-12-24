@@ -5,31 +5,30 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import { useMDXComponents } from "@root/mdx-components";
 
 export async function generateStaticParams() {
-    const slugs = getAllBlogSlugs();
-    return slugs.map((slug) => ({
-        slug,
-    }));
+	const slugs = getAllBlogSlugs();
+	return slugs.map((slug) => ({
+		slug,
+	}));
 }
 
 export default async function BlogPost({
-    params,
+	params,
 }: {
-    params: Promise<{ slug: string }>;
+	params: Promise<{ slug: string }>;
 }) {
-    const { slug } = await params;
+	const { slug } = await params;
 
-    const post = getBlogBySlug(slug);
+	const post = getBlogBySlug(slug);
 
+	if (!post) {
+		notFound();
+	}
 
-    if (!post) {
-        notFound();
-    }
+	const { content } = await compileMDX({
+		source: post.content,
+		options: { parseFrontmatter: true },
+		components: useMDXComponents(),
+	});
 
-    const { content } = await compileMDX({
-        source: post.content,
-        options: { parseFrontmatter: true },
-        components: useMDXComponents(),
-    });
-
-    return <>{content}</>;
+	return <>{content}</>;
 }
