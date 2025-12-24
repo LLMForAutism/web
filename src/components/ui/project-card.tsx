@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Calendar, CheckCircle2, Clock, ClipboardList } from "lucide-react";
-import { Project } from "repositories/projects";
+import { Project } from "@/repositories/projects";
 
 export default function ProjectCard({
   project,

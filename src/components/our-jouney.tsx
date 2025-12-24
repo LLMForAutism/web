@@ -1,7 +1,7 @@
 import Image from "next/image";
 import RoadPath from "./ui/road-path";
-import checkpointIcon from "@assets/img/checkpoint-icon.webp";
-import { journeys } from "@repositories/journeys";
+import checkpointIcon from "@/assets/img/checkpoint-icon.webp";
+import { journeys } from "@/repositories/journeys";
 
 
 export default function OurJourney() {

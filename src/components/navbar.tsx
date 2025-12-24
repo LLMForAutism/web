@@ -13,7 +13,7 @@ export default function Navbar() {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Proyek", href: "#proyek" },
-    { label: "Blog", href: "#blog" },
+    { label: "Blog", href: "/blogs" },
     { label: "Tentang Kami", href: "/about" },
   ];
 

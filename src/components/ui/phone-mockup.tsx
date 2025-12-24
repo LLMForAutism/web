@@ -1,6 +1,6 @@
 import { ChevronLeft, ArrowUp, Signal, Battery } from "lucide-react";
 import Image from "next/image";
-import ingtonIcon from "@assets/img/ington-icon.png";
+import ingtonIcon from "@/assets/img/ington-icon.png";
 
 export default function PhoneMockup() {
   return (

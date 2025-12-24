@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Target } from "lucide-react";
-import childrenFunWithGuitar from "@assets/img/children-fun-with-guitar.jpg";
+import childrenFunWithGuitar from "@/assets/img/children-fun-with-guitar.jpg";
 
 export default function VisiMisi() {
   const misiItems = [

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { Member } from "@repositories/members";
+import { Member } from "@/repositories/members";
 import { useState } from "react";
 
 export default function PersonCard({
