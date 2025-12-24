@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { Calendar, Clock, User } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function BlogCard({
 	slug,
@@ -21,16 +24,21 @@ export default function BlogCard({
 	category: string;
 	image?: string;
 }) {
+	const [imageError, setImageError] = useState(false);
+
 	return (
 		<Link href={`/blogs/${slug}`}>
 			<div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full flex flex-col cursor-pointer border border-border hover:border-jade-green">
 				{/* Image Placeholder */}
 				<div className="relative h-48 bg-gradient-to-br from-mint-green to-jade-green overflow-hidden">
-					{image ? (
+					{image && !imageError ? (
 						<Image
 							src={image}
 							alt={title}
-							className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+							fill
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							className="object-cover group-hover:scale-105 transition-transform duration-300"
+							onError={() => setImageError(true)}
 						/>
 					) : (
 						<div className="w-full h-full flex items-center justify-center">
