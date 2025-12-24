@@ -48,7 +48,7 @@ export default function BlogsPage() {
 	return (
 		<>
 			{/* Hero Section */}
-			<section className="bg-gradient-to-br from-mint-green to-white py-20 md:py-32 mt-20">
+			<section className="bg-gradient-to-b from-mint-green to-whitesmoke py-20 md:py-32 mt-20">
 				<div className="container mx-auto px-4">
 					<div className="max-w-4xl mx-auto text-center">
 						<h1

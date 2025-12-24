@@ -44,10 +44,27 @@ export default function OurRoadmap() {
 	];
 
 	return (
-		<section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/30 py-20 md:py-32">
-			<div className="container mx-auto px-4 flex flex-col gap-8">
-				<h2 className="font-bold text-3xl text-center">Perjalanan Kami</h2>
+		<section className="py-16 md:py-24 bg-gradient-to-b from-whitesmoke to-whitesmoke">
+			<div className="container mx-auto px-4">
+				{/* Section Header */}
+				<div className="text-center mb-12 md:mb-16">
+					<h2
+						className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+						style={{ fontFamily: "Poppins, sans-serif" }}
+					>
+						<span className="text-foreground">Perjalanan </span>
+						<span className="text-jade-green">Kami</span>
+					</h2>
+					<p
+						className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
+						style={{ fontFamily: "Poppins, sans-serif" }}
+					>
+						Dari ide awal hingga inovasi yang berdampak nyata untuk anak-anak
+						dengan autisme
+					</p>
+				</div>
 
+				{/* Timeline */}
 				<div className="max-w-4xl mx-auto">
 					{roadmaps.map((item, index) => (
 						<RoadmapItem

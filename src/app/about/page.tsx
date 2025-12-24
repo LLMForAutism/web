@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 
 export default function About() {
 	return (
-		<div>
+		<div className="bg-whitesmoke">
 			<Navbar />
 			<AboutUs />
 			<OurRoadmap />

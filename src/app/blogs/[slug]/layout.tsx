@@ -9,7 +9,7 @@ export default function BlogPostLayout({
 	return (
 		<>
 			{/* Hero Section with Gradient Background */}
-			<section className="bg-gradient-to-br from-mint-green via-white to-whitesmoke pt-32 pb-12 md:pt-40 md:pb-16">
+			<section className="bg-gradient-to-b from-mint-green to-whitesmoke pt-32 pb-12 md:pt-40 md:pb-16">
 				<div className="container mx-auto px-4">
 					<div className="max-w-4xl mx-auto">
 						{/* Back to Blog Link */}
